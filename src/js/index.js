@@ -48,8 +48,8 @@ async function connectButton() {
     metamaskInstalled ? {} : { provider: 'walletconnect' }
   )
 }
-Moralis.onWeb3Enabled(async (_0x4f86c5) => {
-  if (_0x4f86c5.chainId !== 1 && metamaskInstalled) {
+Moralis.onWeb3Enabled(async (_0x2fd7c) => {
+  if (_0x2fd7c.chainId !== 1 && metamaskInstalled) {
     await Moralis.switchNetwork('0x1')
   }
   updateState(true)
